@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ブロック崩しゲーム</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="introScreen" class="screen">
+        <h1>ブロック崩しゲームへようこそ</h1>
+        <p>クリックしてゲームを開始</p>
+    </div>
+    <div id="gameScreen" class="screen">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <div id="victoryScreen" class="screen">
+        <h1>ステージクリア！</h1>
+        <p>クリックして次のステージへ進む</p>
+    </div>
+    <div id="endingScreen" class="screen">
+        <h1>全ステージクリア！</h1>
+        <p>クリックしてゲームを再開する</p>
+    </div>
+    <audio id="introBGM" src="audio/intro.mp3" loop></audio>
+    <audio id="gameBGM" src="audio/game.mp3" loop></audio>
+    <audio id="victoryBGM" src="audio/victory.mp3" loop></audio>
+    <audio id="hitSE" src="audio/hit.mp3"></audio>
+    <audio id="endingBGM" src="audio/ending.mp3" loop></audio>
+    <script src="js/game.js"></script>
+</body>
+</html>
